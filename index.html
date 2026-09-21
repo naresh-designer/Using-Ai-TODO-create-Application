@@ -8,55 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="app-shell">
-    <!-- Brand and current date establish the page context. -->
-    <header class="topbar">
-      <a class="brand" href="." aria-label="Done Today home">
-        <span class="brand-mark" aria-hidden="true">✓</span>
-        <span>done today</span>
-      </a>
-      <p class="date" id="todayDate"></p>
-    </header>
-
-    <section class="intro" aria-labelledby="pageTitle">
-      <div>
-        <p class="eyebrow">Your small wins, in one place</p>
-        <h1 id="pageTitle">Make space for<br><em>what matters.</em></h1>
-      </div>
-      <div class="progress-orb" aria-label="Completion progress">
-        <span id="progressPercent">0%</span>
-        <small>complete</small>
-      </div>
-    </section>
-
-    <!-- Task entry, filters, and the live task list share one workspace. -->
-    <section class="workspace" aria-label="Todo workspace">
-      <form class="add-form" id="addForm">
-        <label class="sr-only" for="taskInput">Add a new task</label>
-        <input id="taskInput" type="text" maxlength="120" placeholder="What needs doing?" autocomplete="off">
-        <button class="add-button" type="submit"><span aria-hidden="true">+</span> Add task</button>
-      </form>
-
-      <div class="toolbar">
-        <div class="filters" role="group" aria-label="Filter tasks">
-          <button class="filter-button active" type="button" data-filter="all">All <span id="allCount">0</span></button>
-          <button class="filter-button" type="button" data-filter="active">To do <span id="activeCount">0</span></button>
-          <button class="filter-button" type="button" data-filter="completed">Done <span id="completedCount">0</span></button>
-        </div>
-        <button class="clear-button" id="clearCompleted" type="button">Clear completed</button>
-      </div>
-
-      <div class="task-list" id="taskList" aria-live="polite"></div>
-      <!-- JavaScript reveals this state when the current filter has no tasks. -->
-      <div class="empty-state" id="emptyState" hidden>
-        <span class="empty-icon" aria-hidden="true">✦</span>
-        <h2 id="emptyTitle">A clean slate.</h2>
-        <p id="emptyMessage">Add a task and turn intention into action.</p>
-      </div>
-    </section>
-
-    <footer class="footer-note"><span class="status-dot" aria-hidden="true"></span> Saved locally on this device</footer>
-  </main>
+  
   <script src="app.js"></script>
 </body>
 </html>
